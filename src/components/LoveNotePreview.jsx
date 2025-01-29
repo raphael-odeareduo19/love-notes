@@ -13,10 +13,10 @@ const LoveNotePreview = ({name, message, image, cardRef}) => {
     }
 
     return (
-        <section className="pt-36 w-full px-8 flex flex-col items-center gap-4">
+        <section className="pt-36 px-8 flex flex-col items-center gap-4">
             <div
                 ref={cardRef}
-                className="w-md card p-8 bg-[#fdfffc] flex flex-col items-center gap-6 text-center border-4 border-[#ff4d6d] rounded-md shadow-xl "
+                className="w-sm card p-8 bg-[#fdfffc] flex flex-col items-center gap-6 text-center border-4 border-[#ff4d6d] rounded-md shadow-xl "
                 >
                 <h1
                     className="text-4xl font-black mb-2"
