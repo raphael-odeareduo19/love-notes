@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Gloria Hallelujah", serif;
+}
+
+h1, h2, h3, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+input, textarea {
+    font-family: 'Inter', sans-serif;
+}
+
+input:focus, textarea:focus {
+    background-color: #fff0f3;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.custom-file-upload:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+.love-btn {
+    border-right: 4px solid #ff8fa3;
+    border-bottom: 4px solid #ff8fa3;
+}
+
+.card {
+    font-family: "Gloria Hallelujah", serif;
+}
