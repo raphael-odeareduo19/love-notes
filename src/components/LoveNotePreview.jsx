@@ -13,10 +13,10 @@ const LoveNotePreview = ({name, message, image, cardRef}) => {
     }
 
     return (
-        <section className="w-full px-8 flex flex-col items-center gap-4">
+        <section className="pt-36 w-full px-8 flex flex-col items-center gap-4">
             <div
                 ref={cardRef}
-                className="card p-8 w-[400px] bg-[#fdfffc] flex flex-col items-center gap-6 text-center border-4 border-[#ff4d6d] rounded-md shadow-xl "
+                className="w-md card p-8 bg-[#fdfffc] flex flex-col items-center gap-6 text-center border-4 border-[#ff4d6d] rounded-md shadow-xl "
                 >
                 <h1
                     className="text-4xl font-black mb-2"
@@ -25,12 +25,12 @@ const LoveNotePreview = ({name, message, image, cardRef}) => {
                     <img id="preview" src={image}/>
                 </div>
                 <p
-                    className="text-xl font-semibold w-full"
+                    className="text-xl font-semibold break-words max-w-full"
                 >{message}</p>
 
             </div>
             <button
-                className="py-4 px-8 text-white text-xl font-black bg-[#ff4d6d] rounded-md shadow-md cursor-pointer hover:opacity-80"
+                className="py-4 px-8 text-white text-2xl font-extrabold bg-[#ff4d6d] rounded-md shadow-md cursor-pointer hover:opacity-80"
                 onClick={downloadScreenshot}
                 >Download &darr;</button>
         </section>

@@ -13,10 +13,6 @@ body {
     font-family: "Gloria Hallelujah", serif;
 }
 
-h1, h2, h3, p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
 
 img {
     display: block;
