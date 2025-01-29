@@ -2,6 +2,16 @@ import html2canvas from "html2canvas";
 
 const LoveNotePreview = ({name, message, image, cardRef}) => {
 
+    function downloadScreenshot() {
+        const cardEl = cardRef;
+        html2canvas(cardEl.current).then(canvas => {
+            const link = document.createElement("a")
+            link.download = 'screenshot.png';
+            link.href = canvas.toDataURL();
+            link.click();
+        })
+    }
+
     return (
         <section className="w-full px-8 flex justify-center gap-4">
             <div
@@ -26,15 +36,5 @@ const LoveNotePreview = ({name, message, image, cardRef}) => {
         </section>
     )
 };
-
-function downloadScreenshot() {
-    const cardEl = cardRef;
-    html2canvas(cardEl.current).then(canvas => {
-        const link = document.createElement("a")
-        link.download = 'screenshot.png';
-        link.href = canvas.toDataURL();
-        link.click();
-    })
-}
 
 export default LoveNotePreview;
