@@ -6,7 +6,7 @@ const LoveNotePreview = ({name, message, image, cardRef}) => {
         const cardEl = cardRef;
         html2canvas(cardEl.current).then(canvas => {
             const link = document.createElement("a")
-            link.download = 'screenshot.png';
+            link.download = 'valentinesNote.png';
             link.href = canvas.toDataURL();
             link.click();
         })
@@ -28,11 +28,11 @@ const LoveNotePreview = ({name, message, image, cardRef}) => {
                     className="text-xl font-semibold w-full"
                 >{message}</p>
 
-                <button
-                    className="py-4 px-12 text-white text-base font-bold bg-[#ff4d6d] rounded-md shadow-md cursor-pointer hover:opacity-80"
-                    onClick={downloadScreenshot}
-                    >Download &darr;</button>
             </div>
+            <button
+                className="py-4 text-white text-xl font-black bg-[#ff4d6d] rounded-md shadow-md cursor-pointer hover:opacity-80"
+                onClick={downloadScreenshot}
+                >Download &darr;</button>
         </section>
     )
 };
