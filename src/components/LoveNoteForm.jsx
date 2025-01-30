@@ -1,26 +1,8 @@
-const LoveNoteForm = ({setName, setMessage, setImage, cardRef}) => {
-    
-    function handleImageChange(e) {
-        const file = e.target.files[0];
-        
-        if (file) {
-            const reader = new FileReader();
-            
-            reader.onload = (e) => {
-                setImage(e.target.result)
-            }
-            
-            reader.readAsDataURL(file);
-        } else {
-            setImage(null)
-        }
-        
-    }
+const LoveNoteForm = ({setName, setMessage, cardRef}) => {
     
     function handleCardScreenshot() {
         const cardEl = cardRef;
         cardEl.current.scrollIntoView({behavior: 'smooth'})
-        
     }
 
     function handleSubmit(e) {
@@ -67,13 +49,6 @@ const LoveNoteForm = ({setName, setMessage, setImage, cardRef}) => {
                             onChange={(e) => setMessage(e.target.value)}
                             required
                         ></textarea>
-                    </div>
-                    <div className="flex flex-col">
-                        <label htmlFor="file-upload" className="custom-file-upload py-2 font-bold text-white bg-black rounded-md shadow-lg cursor-pointer hover:opacity-80">Choose photo</label>
-                        <input 
-                            id="file-upload" type="file" accept="image/*"
-                            onChange={handleImageChange}
-                        />
                     </div>
                     <button
                         className="love-btn bg-[#ff4d6d] p-4 rounded-md text-2xl text-white font-bold cursor-pointer shadow-md hover:opacity-80"

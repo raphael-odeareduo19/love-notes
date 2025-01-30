@@ -27,22 +27,6 @@ input:focus, textarea:focus {
     background-color: #fff0f3;
 }
 
-input[type="file"] {
-    display: none;
-}
-
-.custom-file-upload {
-    display: inline-block;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-}
-
-.custom-file-upload:active {
-    transform: translateY(1px);
-    box-shadow: none;
-}
-
 .love-btn {
     border-right: 4px solid #ff8fa3;
     border-bottom: 4px solid #ff8fa3;
@@ -50,11 +34,4 @@ input[type="file"] {
 
 .card {
     font-family: "Gloria Hallelujah", serif;
-}
-
-#preview {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
 }
