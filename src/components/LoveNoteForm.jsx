@@ -37,19 +37,21 @@ const LoveNoteForm = ({setName, setMessage, setImage, cardRef}) => {
             <div className="w-full px-8 flex justify-center items-center">
                 <form 
                     onSubmit={handleSubmit}
-                    className="border-2 border-[#ff4d6d] rounded-md text-center p-6 shadow-md flex flex-col grow gap-12 bg-white max-w-lg"
+                    className="border-2 border-[#ff4d6d] rounded-md text-center p-6 shadow-lg flex flex-col grow gap-12 bg-white max-w-lg"
                 >
                     <div className="flex flex-col gap-2">
                         <label 
                             className="text-xl font-extrabold"
                             htmlFor="firstName"
                         >
-                                What's the special name?
+                                Who's the special person?
                         </label>
                         <input 
                             className="border-1 p-2 rounded-md"
                             id='firstName'
+                            placeholder="Enter their name"
                             onChange={(e) => setName(e.target.value)}
+                            required
                         />
                     </div>
                     <div className="flex flex-col gap-2">
@@ -59,10 +61,11 @@ const LoveNoteForm = ({setName, setMessage, setImage, cardRef}) => {
                                 Craft your message
                         </label>
                         <textarea
-                            placeholder="Write your love note..."
+                            placeholder="Write a short message..."
                             className="border-1 p-2 rounded-md h-20"
                             id='loveMessage'
                             onChange={(e) => setMessage(e.target.value)}
+                            required
                         ></textarea>
                     </div>
                     <div className="flex flex-col">
