@@ -74,7 +74,6 @@ const LoveNoteForm = ({name, message, bgColor, setBgColor, textColor, setTextCol
                                 id="bgColor"
                                 className="size-12 rounded-md cursor-pointer"
                                 type="color"
-                                defaultValue={'#fff'}
                                 value={bgColor}
                                 onChange={handleBgColor}
                             />

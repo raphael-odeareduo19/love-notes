@@ -5,8 +5,8 @@ import LoveNotePreview from "./components/LoveNotePreview";
 const App = () => {
     const [name, setName] = useState('')
     const [message, setMessage] = useState('')
-    const [bgColor, setBgColor] = useState('');
-    const [textColor, setTextColor] = useState('');
+    const [bgColor, setBgColor] = useState('#fff');
+    const [textColor, setTextColor] = useState('#000');
 
     const cardRef = useRef(null);
 
