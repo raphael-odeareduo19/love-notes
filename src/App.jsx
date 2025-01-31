@@ -5,12 +5,20 @@ import LoveNotePreview from "./components/LoveNotePreview";
 const App = () => {
     const [name, setName] = useState('')
     const [message, setMessage] = useState('')
+    const [bgColor, setBgColor] = useState('');
+    const [textColor, setTextColor] = useState('');
 
     const cardRef = useRef(null);
 
     return (
         <div>
             <LoveNoteForm
+                name={name}
+                message={message}
+                textColor={textColor}
+                setTextColor={setTextColor}
+                bgColor={bgColor}
+                setBgColor={setBgColor}
                 setName={setName}
                 setMessage={setMessage}
                 cardRef={cardRef}
@@ -18,6 +26,8 @@ const App = () => {
             {name ? <LoveNotePreview 
                 name={name}
                 message={message}
+                textColor={textColor}
+                bgColor={bgColor}
                 cardRef={cardRef}
             /> : null}
         </div>

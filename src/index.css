@@ -23,9 +23,17 @@ input, textarea {
     font-family: 'Inter', sans-serif;
 }
 
-input:focus, textarea:focus {
-    background-color: #fff0f3;
+input[type="color"] {
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 0;
+    border: 4px solid;
+    background: none;
 }
+
+/* input:focus, textarea:focus {
+    background-color: #fff0f3;
+} */
 
 .love-btn {
     border-right: 4px solid #ff8fa3;
