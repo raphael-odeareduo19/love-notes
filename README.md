@@ -1,8 +1,26 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Love Notes
 
-Currently, two official plugins are available:
+One page web app developed with React JavaScript, styled using Tailwind CSS and deployed with Vercel.
+Developed with the concept of Valentine's Day in mind, for sending messages to loved ones with some style.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- Form submission
+- Color customization
+- Live preview
+- Scroll to section
+- Download button and functionality
+
+
+## FAQ
+#### Color Palette
+[coolors.co](https://coolors.co/)
+
+#### Font Family
+[Gloria Hallelujah](https://fonts.google.com/specimen/Gloria+Hallelujah)
+
+[Inter](https://fonts.google.com/specimen/Inter)
+
+#### Packages
+[html2canvas](https://html2canvas.hertzen.com/)
