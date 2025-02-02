@@ -12,6 +12,10 @@ Developed with the concept of Valentine's Day in mind, for sending messages to l
 - Scroll to section
 - Download button and functionality
 
+## App Screenshots
+![Initial-App-Screen](https://github.com/user-attachments/assets/4d82e9a2-8e78-45de-806f-629c98e4ef14)
+![Love-Note-Preview](https://github.com/user-attachments/assets/21460188-1271-4f44-bdc3-9bf687e988ca)
+
 
 ## FAQ
 #### Color Palette
