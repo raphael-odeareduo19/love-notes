@@ -13,8 +13,8 @@ Developed with the concept of Valentine's Day in mind, for sending messages to l
 - Download button and functionality
 
 ## App Screenshots
-![Initial-App-Screen](https://github.com/user-attachments/assets/4d82e9a2-8e78-45de-806f-629c98e4ef14)
-![Love-Note-Preview](https://github.com/user-attachments/assets/21460188-1271-4f44-bdc3-9bf687e988ca)
+![Initial-App-Screen](https://github.com/user-attachments/assets/e3cee4e5-fa18-4350-bd23-1e505fef52ae)
+![Love-Note-Preview](https://github.com/user-attachments/assets/676c04e7-6f13-4c7e-913d-a308d30cabba)
 
 
 ## FAQ
